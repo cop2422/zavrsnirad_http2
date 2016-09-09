@@ -1,0 +1,27 @@
+<HTML>
+	<head>
+		<script type="text/javascript">
+				var startTime = new Date().getTime();
+				function doneLoading() {
+					var loadtime = new Date().getTime() - startTime;
+					document.getElementById("time").innerHTML="Slika je ucitana za " + loadtime + "ms (milisekundi) .";
+				};    
+		</script>
+	
+
+
+		</head>
+	<body>
+		<div>
+			<br>
+			<p>Prikaz slike:<br></p>
+				
+			<img src="/pictures/p1.jpg" style="width:400px;height:320px;" onload="doneLoading()">
+			<br> <br> <br>
+			<p><br><span id="time"></span></p>
+			</div>
+		</body>
+		
+
+
+	</HTML>
