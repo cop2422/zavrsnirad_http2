@@ -1,6 +1,7 @@
 # zavrsnirad_http2
 Kratak opis prakticnog rada: prikaz unaprijeđenja i razlika koje HTTP/2 protokol donosi u odnosu na svoga prethodnika, HTTP/1.1 .
 
+UPUTE:
 Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" folder ne sadrži folder "pictures", te je njega potrebno iskopirati iz "html" foldera i u "ssl" folder.
 
 Datoteke "http1host.conf" i "localhost.conf" potrebno je smjestiti unutar /etc/apache2/sites-available te ih pravilno omogućiti (engl. enable) kako je i opisano u samom završnom radu.
