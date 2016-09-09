@@ -1,5 +1,5 @@
 # zavrsnirad_http2
-Prikaz unaprijeđenja i razlika koje HTTP/2 protokol donosi u odnosu na svoga prethodnika, HTTP/1.1 .
+Kratak opis prakticnog rada: prikaz unaprijeđenja i razlika koje HTTP/2 protokol donosi u odnosu na svoga prethodnika, HTTP/1.1 .
 
 Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" folder ne sadrži folder "pictures", te je njega potrebno iskopirati iz "html" foldera i u "ssl" folder.
 
