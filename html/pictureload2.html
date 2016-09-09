@@ -1,0 +1,48 @@
+<HTML>
+	<head>
+		<script type="text/javascript">
+				var startTime = new Date().getTime();
+				function doneLoading() {
+					var loadtime = new Date().getTime() - startTime;
+					document.getElementById("time").innerHTML="Slika je ucitana za " + loadtime + "ms (milisekundi) .";
+				};    
+		
+				function goBack() {
+					location.href = 'https://localhost/index.html';
+				}
+				function reload() {
+					location.reload();
+				}
+				function loadhttp2() {
+					location.href = 'https://localhost/pictureload2.html';
+				}
+		</script>
+	
+
+
+		</head>
+	<body>
+		<div>
+			<br>
+			<p>Prikaz slike:<br></p>
+				
+			<img src="/pictures/p1.jpg" style="width:400px;height:320px;" onload="doneLoading()">
+			<br> <br> <br>
+			<p><br><span id="time"></span></p>
+			</div>
+			<hr>
+			<p>
+			<button  onclick="reload();">Ponovno ucitaj</button>
+			<button  onclick="goBack();">Natrag</button>
+			&nbsp;
+			<button class="button" onclick="loadhttp2();">Prijedi na HTTP/2</button>
+			</p>
+		</body>
+		
+<style type="text/css">		
+	.button {
+		outline: black solid thick;
+		}
+	</style>
+
+	</HTML>

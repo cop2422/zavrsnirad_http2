@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html >
+<title>demo server</title>
+<head>
+<script type="text/javascript">
+		
+				function goBack() {
+					location.href = 'https://localhost/index.html';
+				}
+				function reload() {
+					location.reload();
+				}
+				function loadhttp1() {
+					location.href = 'http://127.1.1.1/bigtilesload.html';
+				}
+				function loadhttp2() {
+					location.href = 'https://localhost/bigtilesload.html';
+				}
+		</script>
+		
+    <title></title>
+<body onload="showtimes();"> 
+<div id="loadtimes"></div>
+<div id="pictures"><p>
+	<img src="/pictures/blue_tiles/blue_tile1.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile2.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile3.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile4.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile5.jpg" style="width:50px;height:50px;"><br>
+	<img src="/pictures/blue_tiles/blue_tile6.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile7.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile8.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile9.jpg" style="width:50px;height:50px;">
+	<img src="/pictures/blue_tiles/blue_tile10.jpg" style="width:50px;height:50px;"><br>
+	
+	
+</p></div>
+<div>
+<br>
+<button onclick="reload();">Ponovno ucitaj</button>
+<button onclick="goBack();">Natrag</button>
+<hr>
+<button class="active" onclick="loadhttp1();">Prijedi na HTTP/1.1</button>
+<button onclick="loadhttp2();">Prijedi na HTTP/2</button>
+<div>
+</body>
+<script>
+
+function showtimes() {
+	var times = 'Mjereni vremenski periodi otpocetka veze:<br>'
+	times += 'DOM ucitan (<i>DOM loaded</i>): ' + (window.performance.timing.domContentLoadedEventEnd - window.performance.timing.connectStart) + 'ms<br>'
+	times += 'DOM zavrsen i slike su ucitane(<i>DOM complete</i>): ' + (window.performance.timing.domComplete - window.performance.timing.connectStart) + 'ms<br>'
+	document.getElementById('loadtimes').innerHTML = times
+}
+</script>
+<style type="text/css">		
+	.active {
+		background: #99ff99;
+		}	
+</style>
+</html>

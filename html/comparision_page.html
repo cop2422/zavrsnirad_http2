@@ -1,0 +1,34 @@
+<HTML>
+	<title>demo server</title>
+<script type="text/javascript">
+	function goBack() {
+    location.href = 'https://localhost/index.html';
+}
+function reload() {
+	location.reload();
+}
+	</script>
+	<head>
+		</head>
+	<body>
+		<table><tr>
+			<td><b style="font-size:150%;">HTTP/2 </b></td>
+			<td><b style="font-size:150%;">HTTP/1.1</b></td>
+			</tr>
+		<tr>	
+		<td><div class="http2">
+			<iframe src="https://localhost/pictureload.html" width="600px" height="500px">
+				</iframe>
+			</div></td>
+		<td><div class="http1" >	
+			<iframe src="http://127.1.1.1./pictureload.html" width="600px" height="500px"> 
+				</iframe>
+			</div></td></tr>
+			<tr><td colspan="2" align="center">
+				<br>
+				<button class="button" onclick="reload();">Ponovno ucitaj</button>
+				<button class="button" onclick="goBack();">Natrag</button>
+			</td></tr>
+		</table>
+		</body>
+	</HTML>
