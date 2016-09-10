@@ -1,7 +1,11 @@
 # zavrsnirad_http2
 Kratak opis prakticnog rada: prikaz unaprijeđenja i razlika koje HTTP/2 protokol donosi u odnosu na svoga prethodnika, HTTP/1.1 .
 
+
+!!! potrebne instalacije nghttp2 i openssl knjižnica
+
 UPUTE:
+----------------------------------------------------------
 Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" folder ne sadrži folder "pictures", te je njega potrebno iskopirati iz "html" foldera i u "ssl" folder.
 
 Datoteke "http1host.conf" i "localhost.conf" potrebno je smjestiti unutar /etc/apache2/sites-available te ih pravilno omogućiti (engl. enable) kako je i opisano u samom završnom radu.
@@ -11,3 +15,4 @@ Datoteke "example.crt" i "example.key" potrebno je, također, postaviti unutar /
 
 Datoteka "httpd.conf" nalazi se unutar direktorija /usr/local/apache2/conf/ te je nju potrebno zamijeniti sa verzijom sa githuba ili samo na kraju datoteke pridodati direktive: LoadModule http2_module modules/mod_http2.so
                                                 LoadModule ssl_module modules/mod_ssl.so
+----------------------------------------------------------
