@@ -18,5 +18,5 @@ Datoteke "example.crt" i "example.key" potrebno je, također, postaviti unutar /
 Datoteku "httpd.conf" treba smjestiti unutar direktorija /usr/local/apache2/conf/ te ju je potrebno zamijeniti sa verzijom sa githuba ili na kraju već postojeće datoteke, pridodati direktive: LoadModule http2_module modules/mod_http2.so
                                                                   LoadModule ssl_module modules/mod_ssl.so
                                                 
-Detaljnije upute za instalaciju web aplikacije, kao i sami proces izrade iste opisan je unutar dokumenta završnog rada.
+Detaljnije upute za instalaciju web aplikacije, kao i sami proces izrade i mogućnosti iste opisan je unutar dokumenta završnog rada.
 ----------------------------------------------------------
