@@ -8,7 +8,7 @@ potrebne instalacije:
 
 UPUTE:
 ----------------------------------------------------------
-Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" folder ne sadrži folder "pictures", te je njega potrebno iskopirati iz "html" foldera i u "ssl" folder.
+Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" direktorij ne sadrži podirektorij "pictures", te je njega potrebno kopirati iz "html" direktorija i u "ssl" direktorij tako da oba direktorija sadrže podirektorij "pictures".
 
 Datoteke "http1host.conf" i "localhost.conf" potrebno je smjestiti unutar /etc/apache2/sites-available te ih pravilno omogućiti (engl. enable) kako je i opisano u samom završnom radu.
 Datoteka "apache2.conf" smještena je unutar /etc/apache2/ te je samo prilagođena datoteka konfiguracije Apache servera.
@@ -17,5 +17,6 @@ Datoteke "example.crt" i "example.key" potrebno je, također, postaviti unutar /
 
 Datoteku "httpd.conf" treba smjestiti unutar direktorija /usr/local/apache2/conf/ te ju je potrebno zamijeniti sa verzijom sa githuba ili na kraju već postojeće datoteke, pridodati direktive: LoadModule http2_module modules/mod_http2.so
                                                                   LoadModule ssl_module modules/mod_ssl.so
-                                                .
+                                                
+Detaljnije upute za instalaciju web aplikacije, kao i sami proces izrade iste opisan je unutar dokumenta završnog rada.
 ----------------------------------------------------------
