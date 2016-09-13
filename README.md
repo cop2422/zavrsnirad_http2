@@ -8,7 +8,7 @@ potrebne instalacije:
 
 UPUTE:
 ----------------------------------------------------------
-Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" direktorij ne sadrži podirektorij "pictures", te je njega potrebno kopirati iz "html" direktorija i u "ssl" direktorij tako da oba direktorija sadrže podirektorij "pictures".
+Dva dana foldera "html" i "ssl" potrebno je premjestiti unutar direktorija /var/www/. Bitno je spomenuti kako "ssl" mapa ne sadrži podmapu "pictures", te je nju potrebno kopirati iz "html" mape i u "ssl" mapu tako da obje mape sadrže podirektorij (podmapu) "pictures".
 
 Datoteke "http1host.conf" i "localhost.conf" potrebno je smjestiti unutar /etc/apache2/sites-available te ih pravilno omogućiti (engl. enable) kako je i opisano u samom završnom radu.
 Datoteka "apache2.conf" smještena je unutar /etc/apache2/ te je samo prilagođena datoteka konfiguracije Apache servera.
